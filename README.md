@@ -29,7 +29,7 @@ This simplified approach retains the main idea of finding a global alignment whi
 
 1. Clone the repository:  
 ```bash
-git clone https://github.com/stanuch/dna-global-align.git
+git clone https://github.com/stanuch/seq-global-align.git
 cd dna-global-align
 ```
 
