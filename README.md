@@ -7,7 +7,7 @@ This project is a command-line tool for performing global alignment of DNA seque
 - Perform global alignment between two sequences
 - Read and display info included in FASTA files
 
-[![asciicast](https://asciinema.org/a/Kkiyb1aF58V6GcveVWeAiuStF.svg)](https://asciinema.org/a/Kkiyb1aF58V6GcveVWeAiuStF)
+![dna-global-align](https://github.com/user-attachments/assets/829ea103-f889-4f9d-b1ee-5a5dd507615a)
 
 ## 🔑 Key Features
 - FASTA file input: Supports standard DNA sequence files  
