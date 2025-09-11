@@ -1,4 +1,4 @@
-# <img width="35" height="35" alt="image" src="https://github.com/user-attachments/assets/b053eabc-0f70-4dd3-a5e7-ebe586e15bf0" /> DNA Global Alignment CLI Tool
+# <img width="35" height="35" alt="image" src="https://github.com/user-attachments/assets/b053eabc-0f70-4dd3-a5e7-ebe586e15bf0" /> Sequence Global Alignment Tool
 
 ## 🗒️ Project Overview
 This project is a command-line tool for performing global alignment of DNA or protein sequences using the Needleman-Wunsch algorithm. It allows users to:  
