@@ -3,48 +3,56 @@
 ## 🗒️ Project Overview
 This project is a command-line tool for performing global alignment of DNA sequences using the Needleman-Wunsch algorithm. It allows users to:  
 
-- Load DNA sequences from FASTA files or manual input  
-- Perform global alignment between two sequences  
-- Calculate matches, mismatches, gaps, and identity percentage 
-- Visualize the alignment in the terminal (CLI)
+- Load DNA sequences from FASTA files
+- Perform global alignment between two sequences
+- Read and display info included in FASTA files
 
-[GIF]
+[![asciicast](https://asciinema.org/a/Kkiyb1aF58V6GcveVWeAiuStF.svg)](https://asciinema.org/a/Kkiyb1aF58V6GcveVWeAiuStF)
 
 ## 🔑 Key Features
 - FASTA file input: Supports standard DNA sequence files  
 - Global alignment: Implements simplified Needleman-Wunsch algorithm for full-sequence comparison  
 - Scoring system: Match, mismatch, and gap penalties, substitution matrix (BLOSUM62) 
-- Alignment statistics:
-  - Number of matches  
-  - Number of mismatches  
-  - Number of gaps  
-  - % identity between sequences
 
 ## 👾 Needleman-Wunsch Algorithm
 
-The Needleman–Wunsch algorithm is a fundamental method in bioinformatics used to align protein or nucleotide sequences. Developed in 1970, it was one of the first applications of dynamic programming to biological sequence comparison.
+The algorithm works by dividing the global alignment problem into smaller subproblems. It uses a scoring system that assigns values for matches, mismatches, and gaps. Then, it systematically fills a matrix where each cell represents the best score achievable for aligning the sequences up to that point. After filling the matrix, the algorithm traces back from the last cell to the first to determine the optimal alignment.
 
-The algorithm works by breaking a large problem (aligning full sequences) into smaller subproblems, then combining their solutions to find the optimal global alignment. Each possible alignment is assigned a score, and the algorithm identifies alignments with the highest possible score. Needleman–Wunsch algorithm is widely used when the quality of a global alignment is critical.
+The simplified version focuses on the core concepts:
+- Initialization of the scoring matrix with gap penalties.
+- Matrix filling using a basic scoring scheme for matches, mismatches, and gaps.
+- Traceback to reconstruct one optimal alignment, without considering multiple equally optimal solutions.
+
+This simplified approach retains the main idea of finding a global alignment while being easier to understand and implement, making it ideal for educational purposes or quick sequence comparisons.
 
 ## 💻 How to use
 
 1. Clone the repository:  
 ```bash
-git clone https://github.com/<your_username>/dna-global-align.git
+git clone https://github.com/stanuch/dna-global-align.git
 cd dna-global-align
 ```
 
-2. Install dependencies:
+2. Install dependencies
+- Make sure you have Python 3 installed, then run:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Run the program:
+3. Prepare your FASTA files
+
+- Place your sequence files in the sequences/ folder (already included in the repo).
+- Use the .fasta format.
+- When running the program, enter only the file name without the extension (e.g., for seq1.fasta, just type seq1).
+
+4. Run the program
 ```bash
 python src/main.py
 ```
+5. Follow the prompts
 
-4. Input paths to two FASTA files when prompted.
+- Enter the names of the two FASTA files you want to align.
+- The program will read the sequences, perform a global alignment using the Needleman–Wunsch algorithm, and display the results in your terminal.
 
 ## 📚 References
 
@@ -56,7 +64,7 @@ python src/main.py
 
 
 ## ✅ To-Do
-- More alignment statistics
+- More statistics
 - Advanced alignment visualization
 - Graphical User Interface (GUI)
 - Reading different file formats
