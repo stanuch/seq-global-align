@@ -1,16 +1,16 @@
-# <img width="35" height="35" alt="image" src="https://github.com/user-attachments/assets/b053eabc-0f70-4dd3-a5e7-ebe586e15bf0" /> DNA Global Alignment CLI Tool
+# <img width="35" height="35" alt="image" src="https://github.com/user-attachments/assets/b053eabc-0f70-4dd3-a5e7-ebe586e15bf0" /> Sequence Global Alignment Tool
 
 ## 🗒️ Project Overview
-This project is a command-line tool for performing global alignment of DNA sequences using the Needleman-Wunsch algorithm. It allows users to:  
+This project is a command-line tool for performing global alignment of DNA or protein sequences using the Needleman-Wunsch algorithm. It allows users to:  
 
-- Load DNA sequences from FASTA files
+- Load sequences using FASTA format
 - Perform global alignment between two sequences
 - Read and display info included in FASTA files
 
 ![dna-global-align](https://github.com/user-attachments/assets/829ea103-f889-4f9d-b1ee-5a5dd507615a)
 
 ## 🔑 Key Features
-- FASTA file input: Supports standard DNA sequence files  
+- FASTA file input: Supports standard DNA/protein sequence files  
 - Global alignment: Implements simplified Needleman-Wunsch algorithm for full-sequence comparison  
 - Scoring system: Match, mismatch, and gap penalties, substitution matrix (BLOSUM62) 
 
@@ -29,7 +29,7 @@ This simplified approach retains the main idea of finding a global alignment whi
 
 1. Clone the repository:  
 ```bash
-git clone https://github.com/stanuch/dna-global-align.git
+git clone https://github.com/stanuch/seq-global-align.git
 cd dna-global-align
 ```
 
