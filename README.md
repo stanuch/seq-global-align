@@ -11,7 +11,8 @@ This project is a command-line tool for performing global alignment of DNA or pr
 
 ## 🔑 Key Features
 - FASTA file input: Supports standard DNA/protein sequence files  
-- Global alignment: Implements simplified Needleman-Wunsch algorithm for full-sequence comparison  
+- Global alignment: Implements simplified Needleman-Wunsch algorithm for full-sequence comparison
+- Similarity: Calculates a similarity percentage score based on the optimal alignment of two sequences
 - Scoring system: Match, mismatch, and gap penalties, substitution matrix (BLOSUM62) 
 
 ## 👾 Needleman-Wunsch Algorithm

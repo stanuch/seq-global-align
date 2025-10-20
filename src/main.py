@@ -13,6 +13,30 @@ def print_sequences(file_path, label):
         print(f"ID: {record.id}")
         print(f"Seqence: {record.seq}\n")
 
+def similarity_percentage(seq1, seq2):
+    if len(seq1) >= len(seq2):
+        long_seq = seq1
+        short_seq = seq2
+    else:
+        long_seq = seq2
+        short_seq = seq1
+
+    min_length = len(short_seq)
+    max_length = len(long_seq)
+    max_similarity_count = 0
+
+    for i in range(max_length - min_length + 1):
+        current_similarity_count = 0
+        for j in range(min_length):
+            if short_seq[j] == long_seq[i + j]:
+                current_similarity_count += 1
+        if current_similarity_count > max_similarity_count:
+            max_similarity_count = current_similarity_count
+
+    percentage = (max_similarity_count / min_length) * 100
+
+    return percentage
+    
 def cls():
     os.system('cls' if os.name=='nt' else 'clear')
 
@@ -27,6 +51,9 @@ def main():
     seq1_path = get_file_path(base_dir, seq1_filename)
     seq2_path = get_file_path(base_dir, seq2_filename)
 
+    sequence1 = read_fasta(seq1_path)
+    sequence2 = read_fasta(seq2_path)
+
     sequences = []
     sequences.append(read_fasta(seq1_path))
     sequences.append(read_fasta(seq2_path))
@@ -37,6 +64,11 @@ def main():
     print(aligned1)
     print(aligned2)
     print(f"\nAlignment score: {score}")
+
+
+    print
+    similar = similarity_percentage(sequence1, sequence2)
+    print(f"Similarity: {similar:.2f}%\n")
 
 if __name__ == "__main__":
     main()
