@@ -1,21 +1,21 @@
 # <img width="35" height="35" alt="image" src="https://github.com/user-attachments/assets/b053eabc-0f70-4dd3-a5e7-ebe586e15bf0" /> Sequence Global Alignment Tool
 
-## 🗒️ Project Overview
+![License](https://img.shields.io/badge/License-MIT-green) ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=Python) ![Status](https://img.shields.io/badge/status-in_progress-yellow) ![Last Commit](https://img.shields.io/github/last-commit/stanuch/seq-global-align)
+
+## Project Overview
 This project is a command-line tool for performing global alignment of DNA or protein sequences using the Needleman-Wunsch algorithm. It allows users to:  
 
 - Load sequences using FASTA format
 - Perform global alignment between two sequences
 - Read and display info included in FASTA files
 
-![dna-global-align](https://github.com/user-attachments/assets/829ea103-f889-4f9d-b1ee-5a5dd507615a)
-
-## 🔑 Key Features
+## Key Features
 - FASTA file input: Supports standard DNA/protein sequence files  
 - Global alignment: Implements simplified Needleman-Wunsch algorithm for full-sequence comparison
 - Similarity: Calculates a similarity percentage score based on the optimal alignment of two sequences
 - Scoring system: Match, mismatch, and gap penalties, substitution matrix (BLOSUM62) 
 
-## 👾 Needleman-Wunsch Algorithm
+## Needleman-Wunsch Algorithm
 
 The algorithm works by dividing the global alignment problem into smaller subproblems. It uses a scoring system that assigns values for matches, mismatches, and gaps. Then, it systematically fills a matrix where each cell represents the best score achievable for aligning the sequences up to that point. After filling the matrix, the algorithm traces back from the last cell to the first to determine the optimal alignment.
 
@@ -26,7 +26,7 @@ The simplified version focuses on the core concepts:
 
 This simplified approach retains the main idea of finding a global alignment while being easier to understand and implement, making it ideal for educational purposes or quick sequence comparisons.
 
-## 💻 How to use
+## How to use
 
 1. Clone the repository:  
 ```bash
@@ -55,18 +55,10 @@ python src/main.py
 - Enter the names of the two FASTA files you want to align.
 - The program will read the sequences, perform a global alignment using the Needleman–Wunsch algorithm, and display the results in your terminal.
 
-## 📚 References
+## References
 
 - Needleman, S.B., & Wunsch, C.D. (1970). A general method applicable to the search for similarities in the amino acid sequence of two proteins.
 - Mount, D.W. (2004). Bioinformatics: Sequence and Genome Analysis. Cold Spring Harbor Laboratory Press.
 - EMBOSS Needle tool: https://www.ebi.ac.uk/jdispatcher/psa/emboss_needle
 - Biopython Documentation: https://biopython.org/wiki/Documentation
 - Simplified Needleman-Wunsch Algorithm inspired by: https://gist.github.com/slowkow/06c6dba9180d013dfd82bec217d22eb5
-
-
-## ✅ To-Do
-- More statistics
-- Advanced alignment visualization
-- Graphical User Interface (GUI)
-- Reading different file formats
-- Ability to use many substitution matrices
