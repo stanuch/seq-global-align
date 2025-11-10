@@ -1,6 +1,10 @@
 # <img width="35" height="35" alt="image" src="https://github.com/user-attachments/assets/b053eabc-0f70-4dd3-a5e7-ebe586e15bf0" /> Sequence Global Alignment Tool
 
-![License](https://img.shields.io/badge/License-MIT-green) ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=Python) ![Status](https://img.shields.io/badge/status-in_progress-yellow) ![Last Commit](https://img.shields.io/github/last-commit/stanuch/seq-global-align)
+![License](https://img.shields.io/badge/License-MIT-green) 
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=Python) 
+![Status](https://img.shields.io/badge/status-functional-success)
+![Stage](https://img.shields.io/badge/stage-proof_of_concept-orange)
+![Last Commit](https://img.shields.io/github/last-commit/stanuch/seq-global-align)
 
 ## Project Overview
 This project is a command-line tool for performing global alignment of DNA or protein sequences using the Needleman-Wunsch algorithm. It allows users to:  
