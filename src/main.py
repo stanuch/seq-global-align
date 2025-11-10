@@ -4,7 +4,7 @@ from needle import needleman_wunsch
 from Bio import SeqIO
 
 def get_file_path(base_dir, filename):
-    seq_dir = os.path.join(base_dir, ".", "sequences") # fasta files path
+    seq_dir = os.path.join(base_dir, "..", "sequences") # fasta files path
     return os.path.join(seq_dir, f"{filename}.fasta")
 
 def print_sequences(file_path, label):
